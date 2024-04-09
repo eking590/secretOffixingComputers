@@ -1,0 +1,108 @@
+
+
+
+
+.collections {
+    padding-left: 2%;
+    padding-right: 2%; 
+    padding: 1rem;
+    border: solid #f3f7fa;
+    border-width: 3px 0 0;
+    border-bottom: solid #f3f7fa;
+    border-left:solid  #f3f7fa;
+    border-right: solid  #f3f7fa;
+
+}
+.trending {
+    position: relative;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding: 1rem;
+    border: solid #f3f7fa;
+    border-width: 3px 1px 1px;
+    box-sizing: border-box;
+}
+
+::placeholder {
+    color: deeppink;
+    font-size: 1rem;
+    text-transform: lowercase;
+    width: max-content;
+  }
+
+  .form-control {
+    display: inline-flex;
+    padding: 2px;
+    border: 2px solid slategray;
+    outline: none;
+    border-radius: 30px; 
+    width: 300px; 
+  } 
+
+  .form-control input:valid {
+    margin-left: 5px;
+    width: 250px; 
+  }        
+  
+  .latest-product-heading .h3{
+    margin-left: 110px;
+  }
+  .latest-products {
+    background-color: #e3f2fd; 
+  }
+  .latest-products .card-img-top {
+    margin-top: 20px; 
+    margin-bottom: 20px;
+  }
+  .container .row .col:hover{
+    transform: scale(1.1); 
+  }
+
+  .trending-product-heading .h3{
+    margin-top:auto; 
+    margin-left: 110px;
+  }
+  .trending-products .card-img-top{
+    margin-top: 20px; 
+    margin-bottom: 20px;
+  }
+  .advert-session .row{
+    margin-top: 20px;
+  }
+  .partners-logo{
+    margin-top: 70px; 
+  }
+  .trending-products {
+    background-color: #e3f2fd; 
+    margin-bottom:auto;
+  }
+
+ .bi-star-fill {
+    color: gold; 
+  }
+
+.bi-star-half {
+  color:gold; 
+} 
+
+.bi-star {
+  color:gold; 
+}
+.product-page .row {
+  margin-top:50px; 
+  margin-left:20px; 
+  margin-right: 20px;
+  background-color: #e3f2fd;
+}
+
+.product-page .row .card-img-top{
+  margin-top: 20px;
+  margin-bottom:20px; 
+  
+} 
+
+.product-page .card{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+}

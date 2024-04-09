@@ -1,0 +1,487 @@
+
+
+<!-- carousel display here start-->
+<div class="advert-session">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-14">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="/public/img/2021 newest dell inspiron 15 3000 series laptop.jpeg" class="d-block w-100" alt="dell inspiron 15">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="/public/img/Hp pavilion 15 gaming laptop 15.6.jpeg" class="d-block w-100" alt="hp pavilion 15 gaming pc">
+            </div>
+            <div class="carousel-item">
+              <img src="/public/img/hp 15 pavilion.avif" class="d-block w-100" alt="hp 15 pavilion">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>     
+        
+    </div>
+  </div>
+</div>
+<!-- carousel display here end -->
+
+
+
+
+<!--latest products start -->
+<div class="latest-products">
+  <div class="latest-product-heading">
+    <p class="h3"><i class="bi bi-collection-fill"></i>latest products</p>
+  </div>
+  
+  <div class="container"> 
+      <div class="row row-cols-1 row-cols-md-4 g-4"> 
+        
+        
+
+        
+        <% if(products != '') { %>
+          <% products.forEach(function(product, index) { %>
+
+            <div class="col">
+                <div class="card h-100">
+                  <img src="../public/img/<%= product.image %>" class="card-img-top" alt="product.name">
+                      <div class="card-body">
+                        <h5 class="card-title"><%= product.title %></h5>
+                        <p class="card-text"> &#8358; <%= product.price %></p>
+                        <p class="card-text"> <%= product.description %> </p>
+                        <a href="./product" class="btn btn-success"><i class="bi bi-telephone"></i> +234-702-514-2100</a>
+                        
+                        <div>
+                          <a href="./product" class="btn btn-success"><i class="bi bi-whatsapp"></i> +234-702-514-2100</a>
+
+                        </div>
+
+                        <div class="star-ratings">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col">
+                                <p> rating <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-half"></i>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+            
+                        <div class="card-footer">
+                          <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                      </div>
+                    </div>
+        <% }); %> 
+        <% }  %>   
+
+
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="/public/img/dell latitude 5430 14 inch laptop.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Dell Latitude 5430</h5>
+              <p class="card-text"> &#8358; 250,000.00 </p>
+              <a href="#" class="btn btn-success">Buy</a>
+              <div class="star-ratings">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <p> rating <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-half"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="/public/img/hp 15 pavilion.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">HP 15 Pavilion</h5>
+              <p class="card-text"> &#8358; 200,000.00</p>
+              <a href="#" class="btn btn-success">Buy</a>
+              <div class="star-ratings">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <p> rating <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-half"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="/public/img/dell inspiron 15 corei5,11th generation .png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">dell inspiron 15 corei5</h5>
+              <p class="card-text"> &#8358; 450,000.00</p>
+              <a href="#" class="btn btn-success">Buy</a>
+              <div class="star-ratings">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <p> rating <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-half"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="/public/img/dell inspiron 15 corei5,11th generation .png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">dell inspiron 15 corei5</h5>
+              <p class="card-text"> &#8358; 450,000.00</p>
+              <a href="#" class="btn btn-success">Buy</a>
+              <div class="star-ratings">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <p> rating <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-half"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="/public/img/dell inspiron 15 corei5,11th generation .png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">dell inspiron 15 corei5</h5>
+              <p class="card-text"> &#8358; 450,000.00</p>
+              <a href="#" class="btn btn-success">Buy</a>
+              <div class="star-ratings">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <p> rating <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-half"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="/public/img/dell inspiron 15 corei5,11th generation .png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">dell inspiron 15 corei5</h5>
+              <p class="card-text"> &#8358; 450,000.00</p>
+              <a href="#" class="btn btn-success">Buy</a>
+              <div class="star-ratings">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <p> rating <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-half"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div> 
+        <div class="col">
+          <div class="card h-100">
+            <img src="/public/img/dell inspiron 15 corei5,11th generation .png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">dell inspiron 15 corei5</h5>
+              <p class="card-text"> &#8358; 450,000.00</p>
+              <a href="#" class="btn btn-success">Buy</a>
+              <div class="star-ratings">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <p> rating <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-half"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
+
+
+
+
+  </div>
+
+
+</div> 
+
+
+<!--latest products end -->
+
+
+
+<!-- trending product start-->
+<div class="trending-products">
+  <div class="trending-product-heading">
+    <p class="h3"><i class="bi bi-collection-fill"></i>trending products</p>
+  </div>
+  
+  <div class="container"> 
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="/public/img/2021 newest dell inspiron 15 3000 series laptop.jpeg" class="card-img-top" alt="dell inspiron 15">
+            <div class="card-body">
+              <h5 class="card-title">Dell Inspiron 15 3000 Series</h5>
+              <p class="card-text"> &#8358; 350,000.00</p>
+              <a href="#" class="btn btn-primary">Buy</a>
+              <div class="star-ratings">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <p> rating <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="/public/img/dell latitude 5430 14 inch laptop.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Dell Latitude 5430</h5>
+              <p class="card-text"> &#8358; 250,000.00 </p>
+              <a href="#" class="btn btn-primary">Buy</a>
+              <div class="star-ratings">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <p> rating <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star"></i></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="/public/img/hp 15 pavilion.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">HP 15 Pavilion</h5>
+              <p class="card-text"> &#8358; 200,000.00</p>
+              <a href="#" class="btn btn-primary">Buy</a>
+              <div class="star-ratings">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <p> rating <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-half"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="/public/img/dell inspiron 15 corei5,11th generation .png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">dell inspiron 15 corei5</h5>
+              <p class="card-text"> &#8358; 450,000.00</p>
+              <a href="#" class="btn btn-primary">Buy</a>
+              <div class="star-ratings">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <p> rating <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-half"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="/public/img/dell inspiron 15 corei5,11th generation .png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">dell inspiron 15 corei5</h5>
+              <p class="card-text"> &#8358; 450,000.00</p>
+              <a href="#" class="btn btn-primary">Buy</a>
+              <div class="star-ratings">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <p> rating <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-half"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="/public/img/dell inspiron 15 corei5,11th generation .png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">dell inspiron 15 corei5</h5>
+              <p class="card-text"> &#8358; 450,000.00</p>
+              <a href="#" class="btn btn-primary">Buy</a>
+              <div class="star-ratings">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <p> rating <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-half"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="/public/img/dell inspiron 15 corei5,11th generation .png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">dell inspiron 15 corei5</h5>
+              <p class="card-text"> &#8358; 450,000.00</p>
+              <a href="#" class="btn btn-primary">Buy</a>
+              <div class="star-ratings">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <p> rating <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-half"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="col">
+          <div class="card h-100">
+            <img src="/public/img/dell inspiron 15 corei5,11th generation .png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">dell inspiron 15 corei5</h5>
+              <p class="card-text"> &#8358; 450,000.00</p>
+              <a href="#" class="btn btn-primary">Buy</a>
+              <div class="star-ratings">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <p> rating <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-half"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
+
+
+
+
+  </div>
+<!--trending product end-->
+
+<div class="partners-logo">
+  <div class="container">
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+          <img src="/public/img/Acer_Logo.svg.png" alt="acer-logo" height="100" width="200"> 
+        </div>
+
+        <div class="col">
+          <img src="/public/img/Dell_Logo.png" alt="acer-logo" height="100" width="200"> 
+        </div>
+        <div class="col">
+          <img src="/public/img/hp_image.jpg" alt="acer-logo" height="100" width="200"> 
+        </div>
+        <div class="col">
+          <img src="/public/img/Intel_logo_(2006-2020).svg.png" alt="acer-logo" height="100" width="200"> 
+        </div>
+        <div class="col">
+          <img src="/public/img/lg-logo.png" alt="acer-logo" height="100" width="200"> 
+        </div>
+        <div class="col">
+          <img src="/public/img/og_lenovo-_logo.png" alt="acer-logo" height="100" width="200"> 
+        </div>
+        </div>
+       
+    
+  </div>
+</div>
+
+  
+
+
+
+</div> 
+
+
+
+

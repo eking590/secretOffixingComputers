@@ -1,0 +1,100 @@
+
+<!-- product information page start-->
+
+
+<div class="product-page">
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 100%;">
+                  <% if(productDetails != '') { %>
+                    <% productDetails.forEach(function(productdetail, index) { %>
+
+
+                    <img src="../public/img/<%= productdetail.image %>" class="card-img-top" alt="dell inspiron 15">
+                  </div>  
+                  <div class="col">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                          <div class="card h-100">
+                            <img src="../public/img/<%= productdetail.image %>" class="card-img-top" alt="...">
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card h-100">
+                            <img src="../public/img/<%= productdetail.image %>" class="card-img-top" alt="...">
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card h-100">
+                            <img src="../public/img/<%= productdetail.image %>" class="card-img-top" alt="...">
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                
+            </div> 
+            
+            
+            <div class="col">
+                <div class="card" style="width: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title"><%= productdetail.title %></h5>
+                        <hr> 
+                        <p class="card-text"> <strong> &#8358;  <%= productdetail.price %></strong></p>
+                        <div class="col">
+                            <p> <%= productdetail.Review %><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-half"></i>
+                            </p>
+                          </div>
+                        <p> Write a Review </p>
+                        <hr> 
+                        <p> <strong> Type: </strong> <%= productdetail.Type %> </p>
+                        <p> <strong> Brand: </strong> <%= productdetail.Brand %> </p>
+                        <p> <strong> Categories: </strong> </br><%= productdetail.Categories %></p>
+                        <p> <strong> Tags: </strong> </br><%= productdetail.Tags %></p>
+                        <p> <strong> Availability: </strong> </br><%= productdetail.Availability %></p>
+                        <hr> 
+                      
+                          <h4> Specifications: </br> </h4>
+                          <p> <strong>SKU:</strong><%= productdetail.SKU %> <strong>Model: </strong><%= productdetail.Model%>  <strong>Weight(Kg):</strong><%= productdetail.Weight %></p> 
+                        
+    
+                        
+                        <div class="card-body"> 
+                            <h5 class="card-title"> Key Features </h5>
+                            <hr> 
+                            <p class="card-text"> 
+                                <ul>
+                                    <li> <%= productdetail.processorBrand %></li>
+                                    <li> <%= productdetail.graphics %> </li>
+                                    <li> <%= productdetail.RAM %> </li>
+                                    <li> <%= productdetail.HDDCapacity %> </li>
+                                    <li> <%= productdetail.NoofCores %> </li>
+                                    <li> <%= productdetail.Display %> </li>
+                                    <li> <%= productdetail.GraphicsProcessor %> </li>
+                                    <li> <%= productdetail.ScreenSize %></li>
+                                    <li> <%= productdetail.Resolution %> </li>
+                                    <li> <%= productdetail.WirelessWifi %> </li>
+                                    <li> <%= productdetail.Bluetooth %> </li>
+                                    <li> <%= productdetail.USBPort %> </li>
+                                    <li> <%= productdetail.BatteryCapacity %> </li>
+                                    <li><%= productdetail.TypeofHDD %> </li>
+                                </ul>
+
+
+
+                            </p> 
+                            <a href="#" class="btn btn-primary">Buy NOW!!
+                            </a>
+                            <p> 24 HOURS SERVICE CENTER(chat or call):<i class="bi bi-telephone"></i> <a href="+234-702-514-2100"> +234-702-514-2100</a> </p> 
+                            <p> ORDER NOW!!! Nationwide Free Delivery </p>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+        </div>
+        <% }); %> 
+        <% }  %> 
+</div> 
+
+
+<!-- product information page end-->

@@ -1,0 +1,32 @@
+{
+       
+    "image": "Hp pavilion 15 gaming laptop 15.6.jpeg",
+    "title":"hp pavilion 15 gaming pc", 
+    "price": "300000", 
+    "Review": "5", 
+    "Type":"Notebook", 
+    "Brand":"HP", 
+    "Categories": "Computers & Laptops, mobile phone, ipads, airpods & Cameras, smart Television and Desktop", 
+    "Tags":"computer, laptops, desktop, monitor, notebooks", 
+    "Availability":"2 in stock", 
+    "SKU": "DEL153000", 
+    "Model": "DEL153YP", "Weight": 0.8, 
+    "processorBrand": "intel core", 
+    "graphics": "Intel UHD Graphics", 
+    "RAM":"4 GB DDR4 2666 Mhz", 
+    "HDDCapacity":"2 TB HDD",
+    "NoofCores":"7 Cores",
+    "Display":"NIVDA",
+    "GraphicsProcessor":"Intel Integrated Graphics",
+    "ScreenSize":"15.6 inches", 
+    "Resolution":"1920 x 1080",
+    "WirelessWifi":"802.11 bgn",
+    "Bluetooth":"present", 
+    "USBPort":"5",
+    "BatteryCapacity":"31.5 W-h, Up to 8 Hours of Battery Life",
+    "TypeofHDD":"HDD, SDD"
+     
+}
+
+
+
